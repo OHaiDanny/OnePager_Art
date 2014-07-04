@@ -80,7 +80,7 @@ a {
         font-size: 3vmax;
         margin-top: 0.5em; }
   #page #about {
-    background: #222;
+    background: #222 50% 0 repeat fixed;
     min-height: 100%; }
     #page #about article {
       padding-top: 15vh; }
@@ -98,26 +98,17 @@ a {
         margin-top: 0.5em;
         text-align: left; }
   #page #starter {
-    background: url(/img/04.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 180%; }
+    background: url(/img/04.jpg) 50% 0 repeat fixed; }
   #page #entree {
-    background: url(/img/02.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 180%; }
+    background: url(/img/02.jpg) 50% 0 repeat fixed; }
   #page #dessert {
-    background: url(/img/05.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 180%; }
+    background: url(/img/05.jpg) 50% 0 repeat fixed; }
   #page #starter, #page #entree, #page #dessert {
     min-height: 100%;
     color: white; }
     #page #starter section, #page #entree section, #page #dessert section {
       height: 100%;
-      background: rgba(10, 10, 10, 0.6); }
+      background: rgba(10, 10, 10, 0.7); }
       #page #starter section h2, #page #entree section h2, #page #dessert section h2 {
         text-align: center;
         font-size: 5vmax;

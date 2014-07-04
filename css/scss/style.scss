@@ -121,7 +121,7 @@ a {
     }
     
     #about {
-        background:#222;
+        background: #222 50% 0 repeat fixed;
         min-height:100%;
         article {
             padding-top:15vh;
@@ -146,22 +146,13 @@ a {
     }
     
     #starter {
-        background:url(/img/04.jpg);
-        background-repeat:no-repeat;
-        background-position:center;
-        background-size:180%;
+        background: url(/img/04.jpg) 50% 0 repeat fixed;
     }
     #entree {
-        background:url(/img/02.jpg);
-        background-repeat:no-repeat;
-        background-position:center;
-        background-size:180%;
+        background: url(/img/02.jpg) 50% 0 repeat fixed;
     }
     #dessert {
-        background:url(/img/05.jpg);
-        background-repeat:no-repeat;
-        background-position:center;
-        background-size:180%;
+        background: url(/img/05.jpg) 50% 0 repeat fixed;
     }
     
     #starter, #entree, #dessert {
@@ -169,7 +160,7 @@ a {
         color:white;
         section {
             height:100%;
-            background:rgba(10,10,10,0.6);
+            background:rgba(10,10,10,0.7);
             h2 {
                 text-align:center;
                 font-size:5vmax;
