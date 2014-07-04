@@ -1,0 +1,178 @@
+@charset "CP850";
+/* FONT FACES :D */
+@font-face {
+  font-family: gotham_thin;
+  src: url("/font/gotham-thin-webfont.eot");
+  src: local("☺︎"), url("/font/gotham-thin-webfont.eot?#iefix") format("embedded-opentype"), url("/font/gotham-thin-webfont.woff") format("woff"), url("/font/gotham-thin-webfont.ttf") format("truetype"), url("/font/gotham-thin-webfont.svg#gotham_thinregular") format("svg"); }
+@font-face {
+  font-family: gotham_book;
+  src: url("/font/gotham-book-webfont.eot");
+  src: local("☺︎"), url("/font/gotham-book-webfont.eot?#iefix") format("embedded-opentype"), url("/font/gotham-book-webfont.woff") format("woff"), url("/font/gotham-book-webfont.ttf") format("truetype"), url("/font/gotham-book-webfont.svg#gotham_bookregular") format("svg"); }
+@font-face {
+  font-family: gotham_light;
+  src: url("/font/gotham-light-webfont.eot");
+  src: local("☺︎"), url("/font/gotham-light-webfont.eot?#iefix") format("embedded-opentype"), url("/font/gotham-light-webfont.woff") format("woff"), url("/font/gotham-light-webfont.ttf") format("truetype"), url("/font/gotham-light-webfont.svg#gotham_lightregular") format("svg"); }
+html {
+  overflow-y: scroll; }
+
+body {
+  font-size: 16px;
+  font-family: gotham_light; }
+
+html, body {
+  height: 100%; }
+
+a {
+  color: inherit;
+  text-decoration: none; }
+
+.clear {
+  clear: both; }
+
+#page, #menu {
+  -webkit-backface-visibility: hidden;
+  -webkit-perspective: 1000; }
+
+#menu {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 190px;
+  height: 100%;
+  padding: 15px 25px;
+  margin: 0;
+  list-style: none;
+  background: #333;
+  z-index: 10; }
+  #menu li {
+    color: white; }
+
+#page {
+  position: relative;
+  z-index: 20;
+  height: 100%; }
+  #page header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #bbb; }
+    #page header aside {
+      float: right;
+      font-size: 2em;
+      position: relative;
+      right: 0.2em; }
+  #page #home {
+    background: url(/img/01.jpg) 50% 0 repeat fixed;
+    min-height: 100%; }
+    #page #home article {
+      text-align: center;
+      padding-top: 40vh; }
+      #page #home article h2, #page #home article p {
+        background: rgba(10, 10, 10, 0.9);
+        color: white;
+        display: inline-block;
+        padding: 0.3em; }
+      #page #home article h2 {
+        font-size: 7vmax;
+        text-transform: uppercase; }
+      #page #home article p {
+        font-size: 3vmax;
+        margin-top: 0.5em; }
+  #page #about {
+    background: #222;
+    min-height: 100%; }
+    #page #about article {
+      padding-top: 15vh; }
+      #page #about article h2, #page #about article p {
+        color: white;
+        display: inline-block;
+        padding: 0.3em;
+        text-align: center; }
+      #page #about article h2 {
+        font-size: 7vmax;
+        text-transform: uppercase; }
+      #page #about article p {
+        font-size: 2.5vmax;
+        line-height: 6vmax;
+        margin-top: 0.5em;
+        text-align: left; }
+  #page #starter {
+    background: url(/img/04.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 180%; }
+  #page #entree {
+    background: url(/img/02.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 180%; }
+  #page #dessert {
+    background: url(/img/05.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 180%; }
+  #page #starter, #page #entree, #page #dessert {
+    min-height: 100%;
+    color: white; }
+    #page #starter section, #page #entree section, #page #dessert section {
+      height: 100%;
+      background: rgba(10, 10, 10, 0.6); }
+      #page #starter section h2, #page #entree section h2, #page #dessert section h2 {
+        text-align: center;
+        font-size: 5vmax;
+        border-bottom: 1px dashed white;
+        text-transform: uppercase;
+        background: #111;
+        padding: 0.5em; }
+      #page #starter section article, #page #entree section article, #page #dessert section article {
+        padding: 5vmax 0;
+        text-align: center; }
+        #page #starter section article h3, #page #starter section article p, #page #entree section article h3, #page #entree section article p, #page #dessert section article h3, #page #dessert section article p {
+          display: block;
+          padding: 0.3em;
+          text-align: center; }
+        #page #starter section article h3, #page #entree section article h3, #page #dessert section article h3 {
+          font-size: 4vmax;
+          text-transform: uppercase; }
+        #page #starter section article p, #page #entree section article p, #page #dessert section article p {
+          font-size: 2.5vmax;
+          line-height: 5vmax; }
+
+.animating #menu, .menu-visible #menu {
+  display: block; }
+
+/***
+ * If the animating class is present then apply
+ * the CSS transition to #page over 250ms.
+ */
+.animating #page {
+  transition: transform .25s ease-in-out;
+  -webkit-transition: -webkit-transform .25s ease-in-out; }
+
+/***
+ * If the left class is present then transform
+ * the #page element 240px to the left.
+ */
+.animating.left #page {
+  transform: translate3d(-240px, 0, 0);
+  -webkit-transform: translate3d(-240px, 0, 0); }
+
+/***
+ * If the right class is present then transform
+ * the #page element 240px to the right.
+ */
+.animating.right #page {
+  transform: translate3d(240px, 0, 0);
+  -webkit-transform: translate3d(240px, 0, 0); }
+
+/***
+ * If the menu-visible class is present then
+ * shift the #page 240px from the right edge
+ * via position: absolute to keep it in the 
+ * open position. When .animating, .left and
+ * .right classes are not present the CSS
+ * transform does not apply to #page.
+ */
+.menu-visible #page {
+  right: 240px; }
