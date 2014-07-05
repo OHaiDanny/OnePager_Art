@@ -67,7 +67,7 @@ a {
       position: relative;
       right: 0.5em; }
   #page #home {
-    background: url(img/01.jpg) 50% 0 no-repeat fixed;
+    background: url(../img/01.jpg) 50% 0 no-repeat fixed;
     background-size: cover;
     min-height: 100%; }
     #page #home article {
@@ -103,13 +103,13 @@ a {
         margin-top: 0.5em;
         text-align: left; }
   #page #starter {
-    background: url(img/04.jpg) 50% 0 no-repeat fixed;
+    background: url(../img/04.jpg) 50% 0 no-repeat fixed;
     background-size: 300%; }
   #page #entree {
-    background: url(img/02.jpg) 50% 0 no-repeat fixed;
+    background: url(../img/02.jpg) 50% 0 no-repeat fixed;
     background-size: 240%; }
   #page #dessert {
-    background: url(img/05.jpg) 50% 0 no-repeat fixed;
+    background: url(../img/05.jpg) 50% 0 no-repeat fixed;
     background-size: 400%; }
   #page #starter, #page #entree, #page #dessert {
     min-height: 100%;
@@ -139,7 +139,7 @@ a {
           line-height: 5vmax;
           padding: 0 3em; }
   #page #contact {
-    background: url(img/03.jpg) 50% 0 repeat fixed;
+    background: url(../img/03.jpg) 50% 0 repeat fixed;
     min-height: 100%;
     color: white; }
     #page #contact section {
@@ -265,7 +265,7 @@ a {
         line-height: 2vmax;
         padding: 0 3em; }
   #page #contact {
-    background: url(img/03.jpg) 50% 0 no-repeat fixed;
+    background: url(../img/03.jpg) 50% 0 no-repeat fixed;
     background-size: 150%;
     min-height: 100%;
     color: white; }
