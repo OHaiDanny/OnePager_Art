@@ -109,7 +109,7 @@ a {
     }
     
     #home {
-        background: url(/img/01.jpg) 50% 0 no-repeat fixed;
+        background: url(img/01.jpg) 50% 0 no-repeat fixed;
         background-size:cover;
         min-height:100%;
         article {
@@ -159,16 +159,16 @@ a {
     }
     
     #starter {
-        background: url(/img/04.jpg) 50% 0 no-repeat fixed;
-        background-size:150%;
+        background: url(img/04.jpg) 50% 0 no-repeat fixed;
+        background-size:300%;
     }
     #entree {
-        background: url(/img/02.jpg) 50% 0 no-repeat fixed;
-        background-size:120%;
+        background: url(img/02.jpg) 50% 0 no-repeat fixed;
+        background-size:240%;
     }
     #dessert {
-        background: url(/img/05.jpg) 50% 0 no-repeat fixed;
-        background-size:120%;
+        background: url(img/05.jpg) 50% 0 no-repeat fixed;
+        background-size:400%;
     }
     
     #starter, #entree, #dessert {
@@ -208,7 +208,7 @@ a {
     }
     
     #contact {
-        background: url(/img/03.jpg) 50% 0 repeat fixed;
+        background: url(img/03.jpg) 50% 0 repeat fixed;
         min-height:100%;
         color:white;
         section {
@@ -332,6 +332,15 @@ a {
                 }
             }
         }
+        #starter {
+            background-size:120%;
+        }
+        #entree {
+            background-size:120%;
+        }
+        #dessert {
+            background-size:180%;
+        }
         #starter, #entree, #dessert {
             width:33.33%;
             float:left;
@@ -358,7 +367,7 @@ a {
         }
         
         #contact {
-            background: url(/img/03.jpg) 50% 0 no-repeat fixed;
+            background: url(img/03.jpg) 50% 0 no-repeat fixed;
             background-size:150%;
             min-height:100%;
             color:white;
