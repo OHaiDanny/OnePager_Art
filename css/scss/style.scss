@@ -83,6 +83,7 @@ a {
     z-index: 10;
     li {
         color:white;
+        padding:1em 0;
     }
 }
 
@@ -108,7 +109,8 @@ a {
     }
     
     #home {
-        background: url(/img/01.jpg) 50% 0 repeat fixed;
+        background: url(/img/01.jpg) 50% 0 no-repeat fixed;
+        background-size:cover;
         min-height:100%;
         article {
             text-align:center;
@@ -157,13 +159,16 @@ a {
     }
     
     #starter {
-        background: url(/img/04.jpg) 50% 0 repeat fixed;
+        background: url(/img/04.jpg) 50% 0 no-repeat fixed;
+        background-size:150%;
     }
     #entree {
-        background: url(/img/02.jpg) 50% 0 repeat fixed;
+        background: url(/img/02.jpg) 50% 0 no-repeat fixed;
+        background-size:120%;
     }
     #dessert {
-        background: url(/img/05.jpg) 50% 0 repeat fixed;
+        background: url(/img/05.jpg) 50% 0 no-repeat fixed;
+        background-size:120%;
     }
     
     #starter, #entree, #dessert {
@@ -196,6 +201,7 @@ a {
                 p {
                     font-size:2.5vmax;
                     line-height:5vmax;
+                    padding:0 3em;
                 }
             }
         }
@@ -222,6 +228,14 @@ a {
             p {
                 font-size:2.5vmax;
                 line-height:5vmax;
+                text-align:center;
+                padding:1em 3em;
+            }
+            aside {
+                text-align:center;
+                color:white;
+                font-size:5vmax;
+                padding-bottom:0.5em;
             }
             article {
                 #contact-form {
@@ -297,6 +311,82 @@ a {
                     button[type="submit"]:hover {
                         background:$firstColor;
                     }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width:1080px) {
+    #page {
+        #about {
+            padding:0 10%;
+            article {
+                padding-top:15vh;
+                h2 {
+                    font-size:4vmax;
+                }
+                p {
+                    font-size:2vmax;
+                    line-height:3vmax;
+                }
+            }
+        }
+        #starter, #entree, #dessert {
+            width:33.33%;
+            float:left;
+            min-height:100%;
+            section {
+                h2 {
+                    text-align:center;
+                    font-size:2vmax;
+                }
+                article {
+                    padding:2vh 0;
+                    h3 {
+                        font-size:2vmax;
+                        text-transform:uppercase;
+
+                    }
+                    p {
+                        font-size:1vmax;
+                        line-height:2vmax;
+                        padding:0 3em;
+                    }
+                }
+            }
+        }
+        
+        #contact {
+            background: url(/img/03.jpg) 50% 0 no-repeat fixed;
+            background-size:150%;
+            min-height:100%;
+            color:white;
+            section {
+                height:100%;
+                background:rgba(10,10,10,0.7);
+                h2 {
+                    text-align:center;
+                    font-size:5vmax;
+                    text-transform:uppercase;
+                    background:#111;
+                    padding:0.5em;
+                }
+                #map_canvas {
+                    width: 100%;
+                    height:400px;
+                }
+                p {
+                    font-size:2.5vmax;
+                    line-height:5vmax;
+                    text-align:center;
+                    padding:1em 3em;
+                }
+                aside {
+                    text-align:center;
+                    color:white;
+                    font-size:5vmax;
+                    padding-bottom:0.5em;
                 }
             }
         }

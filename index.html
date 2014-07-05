@@ -39,7 +39,7 @@
                 <p>To book your reservation or find out more information, please visit our contact us section.</p>
             </article>
         </div>
-        <div id="starter" data-type="background" data-speed="40">
+        <div id="starter" data-type="background" data-speed="10">
             <section>
                 <h2>Starters</h2>
                 <article>
@@ -56,7 +56,7 @@
                 </article>
             </section>
         </div>
-        <div id="entree" data-type="background" data-speed="40">
+        <div id="entree" data-type="background" data-speed="10">
             <section>
                 <h2>Entree</h2>
                 <article>
@@ -77,7 +77,7 @@
                 </article>
             </section>
         </div>
-        <div id="dessert" data-type="background" data-speed="40">
+        <div id="dessert" data-type="background" data-speed="20">
             <section>
                 <h2>Dessert</h2>
                 <article>
@@ -94,10 +94,10 @@
                 </article>
             </section>
         </div>
-        <div id="contact" data-type="background" data-speed="40">
+        <div class="clear"></div>
+        <div id="contact" data-type="background" data-speed="20">
             <section>
                 <h2>Contact Us</h2>
-                <div id="map_canvas"></div>
                 <p>To book your reservation at The Mountain Top please call <a href="tel:8448851255">(844) 885-1255</a> or e-mail us at <a href="mailto:info@themountaintop.com">info@themountaintop.com</a>
                 </p>
                 <p>If you have any questions please feel free to use the form below to contact us. We will do our best to get back to you within 24 hours.</p>
@@ -127,13 +127,14 @@
                             <button class="submit_btn" id="submit_btn" type="submit">Send</button>
                         </label>
                     </fieldset>
-                    <p>You can also find us on social media</p>
                     <aside>
+                        <p>You can also find us on social media</p>
                         <i class="fa fa-facebook-square"></i>
                         <i class="fa fa-twitter-square"></i>
                         <i class="fa fa-linkedin-square"></i>
                     </aside>
                 </article>
+                <div id="map_canvas"></div>
             </section>
         </div>
         <footer>
@@ -141,31 +142,9 @@
     </div>
     <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js"></script>
-    <script>
-        function initialize() {
-            var location = new google.maps.LatLng(49.4671785, -123.0048952);
-            var map_canvas = document.getElementById('map_canvas');
-            var map_options = {
-                center: location,
-                zoom: 12,
-                scrollwheel: false,
-                navigationControl: false,
-                mapTypeControl: false,
-                scaleControl: false,
-                draggable: false,
-                mapTypeId: google.maps.MapTypeId.ROADMAP
-            }
-            var map = new google.maps.Map(map_canvas, map_options)
-
-            var marker = new google.maps.Marker({
-                position: location,
-                map: map
-            });
-        }
-        google.maps.event.addDomListener(window, 'load', initialize);
-    </script>
     <script type="text/javascript" src="js/mobileMenu.js"></script>
     <script type="text/javascript" src="js/parallax.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
 </body>
 
 </html>

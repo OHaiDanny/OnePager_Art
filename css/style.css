@@ -46,7 +46,8 @@ a {
   background: #333;
   z-index: 10; }
   #menu li {
-    color: white; }
+    color: white;
+    padding: 1em 0; }
 
 #page {
   position: relative;
@@ -66,7 +67,8 @@ a {
       position: relative;
       right: 0.5em; }
   #page #home {
-    background: url(/img/01.jpg) 50% 0 repeat fixed;
+    background: url(/img/01.jpg) 50% 0 no-repeat fixed;
+    background-size: cover;
     min-height: 100%; }
     #page #home article {
       text-align: center;
@@ -101,11 +103,14 @@ a {
         margin-top: 0.5em;
         text-align: left; }
   #page #starter {
-    background: url(/img/04.jpg) 50% 0 repeat fixed; }
+    background: url(/img/04.jpg) 50% 0 no-repeat fixed;
+    background-size: 150%; }
   #page #entree {
-    background: url(/img/02.jpg) 50% 0 repeat fixed; }
+    background: url(/img/02.jpg) 50% 0 no-repeat fixed;
+    background-size: 120%; }
   #page #dessert {
-    background: url(/img/05.jpg) 50% 0 repeat fixed; }
+    background: url(/img/05.jpg) 50% 0 no-repeat fixed;
+    background-size: 120%; }
   #page #starter, #page #entree, #page #dessert {
     min-height: 100%;
     color: white; }
@@ -131,7 +136,8 @@ a {
           text-transform: uppercase; }
         #page #starter section article p, #page #entree section article p, #page #dessert section article p {
           font-size: 2.5vmax;
-          line-height: 5vmax; }
+          line-height: 5vmax;
+          padding: 0 3em; }
   #page #contact {
     background: url(/img/03.jpg) 50% 0 repeat fixed;
     min-height: 100%;
@@ -150,7 +156,14 @@ a {
         height: 50vmax; }
       #page #contact section p {
         font-size: 2.5vmax;
-        line-height: 5vmax; }
+        line-height: 5vmax;
+        text-align: center;
+        padding: 1em 3em; }
+      #page #contact section aside {
+        text-align: center;
+        color: white;
+        font-size: 5vmax;
+        padding-bottom: 0.5em; }
       #page #contact section article #contact-form {
         width: 60%;
         margin: 0 auto;
@@ -219,6 +232,59 @@ a {
         #page #contact section article #contact-form button[type="submit"]:hover {
           background: #d8caa8; }
 
+@media screen and (min-width: 1080px) {
+  #page #about {
+    padding: 0 10%; }
+    #page #about article {
+      padding-top: 15vh; }
+      #page #about article h2 {
+        font-size: 4vmax; }
+      #page #about article p {
+        font-size: 2vmax;
+        line-height: 3vmax; }
+  #page #starter, #page #entree, #page #dessert {
+    width: 33.33%;
+    float: left;
+    min-height: 100%; }
+    #page #starter section h2, #page #entree section h2, #page #dessert section h2 {
+      text-align: center;
+      font-size: 2vmax; }
+    #page #starter section article, #page #entree section article, #page #dessert section article {
+      padding: 2vh 0; }
+      #page #starter section article h3, #page #entree section article h3, #page #dessert section article h3 {
+        font-size: 2vmax;
+        text-transform: uppercase; }
+      #page #starter section article p, #page #entree section article p, #page #dessert section article p {
+        font-size: 1vmax;
+        line-height: 2vmax;
+        padding: 0 3em; }
+  #page #contact {
+    background: url(/img/03.jpg) 50% 0 no-repeat fixed;
+    background-size: 150%;
+    min-height: 100%;
+    color: white; }
+    #page #contact section {
+      height: 100%;
+      background: rgba(10, 10, 10, 0.7); }
+      #page #contact section h2 {
+        text-align: center;
+        font-size: 5vmax;
+        text-transform: uppercase;
+        background: #111;
+        padding: 0.5em; }
+      #page #contact section #map_canvas {
+        width: 100%;
+        height: 400px; }
+      #page #contact section p {
+        font-size: 2.5vmax;
+        line-height: 5vmax;
+        text-align: center;
+        padding: 1em 3em; }
+      #page #contact section aside {
+        text-align: center;
+        color: white;
+        font-size: 5vmax;
+        padding-bottom: 0.5em; } }
 .animating #menu, .menu-visible #menu {
   display: block; }
 
