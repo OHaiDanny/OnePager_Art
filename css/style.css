@@ -231,6 +231,12 @@ a {
           font-size: 20px; }
         #page #contact section article #contact-form button[type="submit"]:hover {
           background: #d8caa8; }
+  #page footer {
+    padding: 1em 0;
+    background: #333; }
+    #page footer p {
+      text-align: center;
+      color: white; }
 
 @media screen and (min-width: 1080px) {
   #page #about {

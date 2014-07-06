@@ -107,7 +107,6 @@ a {
             right:0.5em;
         }
     }
-    
     #home {
         background: url(../img/01.jpg) 50% 0 no-repeat fixed;
         background-size:cover;
@@ -313,6 +312,14 @@ a {
                     }
                 }
             }
+        }
+    }
+    footer {
+        padding:1em 0;
+        background:#333;
+        p{
+            text-align:center;
+            color:white;
         }
     }
 }
